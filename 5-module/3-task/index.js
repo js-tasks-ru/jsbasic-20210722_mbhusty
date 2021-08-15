@@ -8,7 +8,10 @@ function initCarousel() {
   let slideQuantity = carouselInner.children.length;
   let counter = 1;
 
-  if (slideQuantity === 1) {
+  if (counter === 1) {
+    carouselArrowLeft.setAttribute("style", "display: none");
+  }
+  if (slideQuantity === 1){
     carouselArrowLeft.setAttribute("style", "display: none");
     carouselArrowRight.setAttribute("style", "display: none");
   }
