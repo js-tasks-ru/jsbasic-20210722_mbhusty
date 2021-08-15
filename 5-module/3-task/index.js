@@ -8,12 +8,12 @@ function initCarousel() {
   let slideQuantity = carouselInner.children.length;
   let counter = 1;
 
-  if (counter === 1) {
+  if (slideQuantity === 1) {
     carouselArrowLeft.setAttribute("style", "display: none");
+    carouselArrowRight.setAttribute("style", "display: none");
   }
 
   carousel.addEventListener("click", function (event) {
-    console.log('click');
     let slideWidth = carouselSlide.offsetWidth;
 
     if (event.target.closest(".carousel__arrow_right")) {
