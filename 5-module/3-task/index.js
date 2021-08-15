@@ -11,7 +11,7 @@ function initCarousel() {
   if (counter === 1) {
     carouselArrowLeft.setAttribute("style", "display: none");
   }
-  if (slideQuantity === 1){
+  if (slideQuantity === 1) {
     carouselArrowLeft.setAttribute("style", "display: none");
     carouselArrowRight.setAttribute("style", "display: none");
   }
