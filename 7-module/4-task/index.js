@@ -96,8 +96,6 @@ export default class StepSlider {
       this.elem.querySelector(".slider__value").innerHTML = this.findSpan;
       this.elem.classList.remove("slider_dragging");
 
-      console.log(this.elem.querySelector('.slider__progress').style.width, this.elem.querySelector('.slider__thumb').style.left);
-
       this.elem.dispatchEvent(new CustomEvent('slider-change', {
         detail: this.findSpan,
         bubbles: true
